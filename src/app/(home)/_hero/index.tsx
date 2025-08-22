@@ -11,14 +11,13 @@ import {
 } from "@/commen/config/animations";
 import { AnimatedText } from "@/components/ui/animated-text";
 import { FeatureItem } from "@/components/ui/feature-item";
-import { DotsBackground } from "@/commen/element/layout/dots-background";
+import HeroVideoDialog from "@/components/ui/hero-video-dialog";
 
 export default function Hero() {
   const { hero } = params;
 
   return (
     <main className="overflow-hidden">
-      <DotsBackground />
       <motion.section
         initial="initial"
         animate="animate"
@@ -32,7 +31,7 @@ export default function Hero() {
             className="absolute inset-0 -z-10 size-full bg-gradient-to-b from-transparent from-35% to-background"
           />
 
-          <div className="kk-container">
+          <div className="zlk-container">
             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
               {/* Badge */}
               <motion.div
@@ -114,7 +113,6 @@ export default function Hero() {
                     key={index}
                     icon={feature.icon as "ShieldCheck" | "Lock" | "FileText"}
                     text={feature.text}
-                    color={feature.color}
                     delay={1.0 + index * 0.2}
                   />
                 ))}
@@ -195,6 +193,24 @@ export default function Hero() {
               />
             </div>
           </motion.div>
+
+          {/* Hero Video Dialog */}
+          <div className="w-full max-w-4xl mx-auto h-[600px]">
+            <HeroVideoDialog
+              className="block dark:hidden"
+              animationStyle="from-center"
+              videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+              thumbnailSrc="https://startup-template-sage.vercel.app/hero-light.png"
+              thumbnailAlt="Hero Video"
+            />
+            <HeroVideoDialog
+              className="hidden dark:block"
+              animationStyle="from-center"
+              videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+              thumbnailSrc="https://startup-template-sage.vercel.app/hero-dark.png"
+              thumbnailAlt="Hero Video"
+            />
+          </div>
         </div>
       </motion.section>
     </main>

@@ -5,7 +5,6 @@ import { fadeInBlur } from "@/commen/config/animations";
 interface FeatureItemProps {
   icon: "ShieldCheck" | "Lock" | "FileText";
   text: string;
-  color: string;
   delay: number;
 }
 
@@ -15,9 +14,9 @@ const iconMap = {
   FileText,
 };
 
-export function FeatureItem({ icon, text, color, delay }: FeatureItemProps) {
+export function FeatureItem({ icon, text, delay }: FeatureItemProps) {
   const IconComponent = iconMap[icon];
-  
+
   return (
     <motion.div
       variants={fadeInBlur}
@@ -28,9 +27,7 @@ export function FeatureItem({ icon, text, color, delay }: FeatureItemProps) {
         initial={{ scale: 0, rotate: -180 }}
         animate={{ scale: 1, rotate: 0 }}
         transition={{ delay: delay + 0.2, duration: 0.6, type: "spring" }}
-      >
-        <IconComponent className={`w-4 h-4 ${color} flex-shrink-0`} />
-      </motion.div>
+      ></motion.div>
       <motion.span
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
