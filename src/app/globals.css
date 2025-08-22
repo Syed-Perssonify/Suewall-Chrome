@@ -1,26 +1,123 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@font-face {
+  font-family: "Galano Grotesque";
+  src: url("https://cdn.kiwikidsaba.com/public/fonts/galano-grotesque-alt-regular.woff2")
+    format("woff2");
+  font-weight: 100 900; /* weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Galano Grotesque Medium";
+  src: url("https://cdn.kiwikidsaba.com/public/fonts/galano-grotesque-medium.woff2")
+    format("woff2");
+  font-weight: 100 900; /* weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plantin MT Pro";
+  src: url("https://cdn.kiwikidsaba.com/public/fonts/plantin-mt-pro-sm-bd.woff2")
+    format("woff2");
+  font-weight: 100 900; /* weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --primary: #1db89b;
+  --secondary: #d5ffa6;
+  --red: #ff483a;
+  --light-blue: #5d9de5;
+  --purple: #988cff;
+  --dark-green: #1b2e12;
+  --dark-green-2: #13250d;
+  --light-green: #cdf282;
+  --cream: #fffce1;
+  --white: #ffffff;
+  --gray: #808080;
+
+  --font-plantin: "Plantin MT Pro", serif;
+  --font-galano: "Galano Grotesque", sans-serif;
+
+  --font-galano-medium: "Galano Grotesque Medium", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-red: var(--red);
+  --color-light-blue: var(--light-blue);
+  --color-purple: var(--purple);
+  --color-dark-green: var(--dark-green);
+  --color-dark-green-2: var(--dark-green-2);
+  --color-light-green: var(--light-green);
+  --color-cream: var(--cream);
+  --color-gray: var(--gray);
+  --max-width-100: 100rem;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-plantin: "Plantin MT Pro", serif;
+  --font-galano: "Galano Grotesque", sans-serif;
+  --font-galano-medium: "Galano Grotesque Medium", sans-serif;
+
+  /* horizontal breakpoint */
+  --breakpoint-3xl: 2560px;
+
+  /* Vertical breakpoint */
+  --breakpoint-vertical: 640px;
+  --breakpoint-vertical-sm: 768px;
+  --breakpoint-vertical-md: 1024px;
+  --breakpoint-vertical-lg: 1280px;
+  --breakpoint-vertical-xl: 1536px;
+  --breakpoint-vertical-2xl: 1920px;
+  --breakpoint-vertical-3xl: 2560px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Galano Grotesque", sans-serif;
+  overflow-x: hidden !important;
+}
+
+.text-last-center {
+  text-align-last: center;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+/* button disabled */
+button:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+/* Components */
+.btn-primary {
+  @apply text-white font-galano cursor-pointer py-2 md:py-3 px-6 md:px-8 rounded-full bg-primary hover:bg-light-green hover:text-primary transition-colors shadow-lg flex items-center justify-center;
+}
+
+.btn-outline {
+  @apply text-primary font-galano cursor-pointer py-3 px-8 rounded-full border-2 border-primary hover:bg-primary hover:text-white transition-colors shadow-lg flex items-center justify-center;
+}
+
+.kk-container {
+  @apply max-w-100 mx-auto px-6 sm:px-10;
+}
+
+/* Dots Background Pattern */
+.dots-background {
+  background: radial-gradient(circle at 1px 1px, #1db89b 1px, transparent 0);
+  background-size: 24px 24px;
 }
