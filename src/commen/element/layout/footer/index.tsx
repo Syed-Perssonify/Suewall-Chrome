@@ -1,7 +1,15 @@
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+} from "lucide-react";
 import { params } from "@/commen/config/params";
 
 function Footer() {
@@ -20,25 +28,24 @@ function Footer() {
 
             <h1 className="mt-4">{footer.company.tagline}</h1>
             <div className="mt-4 space-y-2">
-              <div className="flex items-center gap-2 text-sm text-black">
+              <div className="flex items-center gap-2 text-md text-black">
                 <MapPin className="h-4 w-4" />
                 <span>{footer.contact.address}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-black">
+              <div className="flex items-center gap-2 text-md text-black">
                 <Phone className="h-4 w-4" />
                 <span>{footer.contact.phone}</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-black">
+              <div className="flex items-center gap-2 text-md text-black">
                 <Mail className="h-4 w-4" />
                 <span>{footer.contact.email}</span>
               </div>
             </div>
             <div className="mt-4">
               <Link href="/contact">
-                <Button variant="secondary">Contact Us</Button>
+                <Button className="btn-primary">Contact Us</Button>
               </Link>
             </div>
-            <p className="text-sm mt-5">{footer.copyrightText}</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
@@ -80,8 +87,8 @@ function Footer() {
                       href={social.href}
                       className="text-black hover:text-primary flex items-center gap-2"
                     >
-                      {social.icon === "Github" && (
-                        <Github className="h-4 w-4" />
+                      {social.icon === "Facebook" && (
+                        <Facebook className="h-4 w-4" />
                       )}
                       {social.icon === "Linkedin" && (
                         <Linkedin className="h-4 w-4" />
@@ -113,7 +120,11 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full flex mt-8 items-center justify-center">
+        <div className="w-full text-center mt-8">
+          <p className="text-md">{footer.copyrightText}</p>
+          <p className="text-md mt-2 underline">{footer.builtBy}</p>
+        </div>
+        <div className="w-full items-center justify-center mt-4">
           <h1 className="text-center text-3xl md:text-5xl lg:text-[8rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/70 select-none">
             {footer.company.name}
           </h1>

@@ -24,7 +24,7 @@ export function AnimatedText({
             ...textReveal.transition,
             delay: delay + index * staggerDelay,
           }}
-          className={`inline-block mr-1 ${className}`}
+          className={`inline-block ${className}`}
         >
           {word}
         </motion.span>

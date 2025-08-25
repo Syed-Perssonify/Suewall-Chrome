@@ -8,7 +8,7 @@ export const routes = {
   contact: {
     path: "/contact",
   },
-  
+
   // Services
   securitiesLitigation: {
     path: "/securities-litigation",
@@ -25,7 +25,7 @@ export const routes = {
   chromeExtension: {
     path: "/chrome-extension",
   },
-  
+
   // Company
   attorneys: {
     path: "/attorneys",
@@ -36,7 +36,7 @@ export const routes = {
   careers: {
     path: "/careers",
   },
-  
+
   // Legal
   privacyPolicy: {
     path: "/privacy-policy",
@@ -47,29 +47,29 @@ export const routes = {
   disclaimer: {
     path: "/disclaimer",
   },
-  
+
   // External links
-  github: {
-    path: "https://github.com/levikorsinsky",
+  facebook: {
+    path: "https://www.facebook.com/levikorsinsky/",
   },
   linkedin: {
-    path: "https://www.linkedin.com/company/levi-korsinsky",
+    path: "https://www.linkedin.com/company/levi-&-korsinsky-llp/",
   },
   twitter: {
-    path: "https://twitter.com/levikorsinsky",
+    path: "https://twitter.com/MergerAlerts",
   },
   email: {
     path: "mailto:info@levikorsinsky.com",
   },
-  
+
   // Chrome Web Store
   chromeWebStore: {
-    path: "#link", // Replace with actual Chrome Web Store link
+    path: "https://chromewebstore.google.com/detail/active-case-checker/jgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjg", // Replace with actual Chrome Web Store link
   },
-  
+
   // Demo
   demo: {
-    path: "#link", // Replace with actual demo link
+    path: "https://www.levikorsinsky.com/demo", // Replace with actual demo link don't forget to add https://
   },
 } as const;
 

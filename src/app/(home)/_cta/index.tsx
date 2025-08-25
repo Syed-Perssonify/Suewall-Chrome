@@ -10,7 +10,7 @@ export default function CTA() {
   return (
     <section className="relative w-full mx-auto overflow-hidden rounded-4xl border border-primary shadow-md px-6 py-16 md:px-16">
       <div className="zlk-container">
-        <div className="flex flex-col-reverse items-center justify-between md:flex-row">
+        <div className=" zlk-container flex flex-col-reverse items-center md:flex-row">
           <div className="z-10 max-w-xl text-left">
             <h1 className="text-2xl font-galano text-black">
               Streamline your claims management with{" "}
@@ -26,7 +26,7 @@ export default function CTA() {
             </Button>
           </div>
           <div className="relative h-[200px] w-full max-w-xl">
-            <Globe className="absolute -bottom-20 -right-40 scale-150" />
+            <Globe className="absolute inset-0 mx-auto scale-150" />
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ const GLOBE_CONFIG: COBEOptions = {
   mapSamples: 16000,
   mapBrightness: 1.2,
   baseColor: [1, 1, 1],
-  markerColor: [251 / 255, 100 / 255, 21 / 255],
+  markerColor: [29 / 255, 184 / 255, 155 / 255],
   glowColor: [1, 1, 1],
   markers: [
     { location: [14.5995, 120.9842], size: 0.03 },
@@ -75,13 +75,6 @@ export function Globe({
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
   const [r, setR] = useState(0);
-
-  const updatePointerInteraction = (value: any) => {
-    pointerInteracting.current = value;
-    if (canvasRef.current) {
-      canvasRef.current.style.cursor = value ? "grabbing" : "grab";
-    }
-  };
 
   const updateMovement = (clientX: any) => {
     if (pointerInteracting.current !== null) {
@@ -134,13 +127,9 @@ export function Globe({
           "size-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]"
         )}
         ref={canvasRef}
-        onPointerDown={(e) =>
-          updatePointerInteraction(
-            e.clientX - pointerInteractionMovement.current
-          )
-        }
-        onPointerUp={() => updatePointerInteraction(null)}
-        onPointerOut={() => updatePointerInteraction(null)}
+        onPointerDown={(e) => {
+          console.log("pointer down");
+        }}
         onMouseMove={(e) => updateMovement(e.clientX)}
         onTouchMove={(e) =>
           e.touches[0] && updateMovement(e.touches[0].clientX)

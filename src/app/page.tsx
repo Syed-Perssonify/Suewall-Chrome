@@ -5,16 +5,17 @@ import CTA from "./(home)/_cta";
 import { Footer } from "@/commen/element/layout/footer";
 import { DotsBackground } from "@/commen/element/layout/dots-background";
 import Feature from "./(home)/_feature";
+import FAQ from "./(home)/_faq";
+import { HowItWorks } from "./(home)/_howItWorks";
 
 export default function Home() {
   return (
     <div>
       {/* <Header /> */}
-      <div className="relative">
-        <DotsBackground />
-        <Hero />
-      </div>
+      <Hero />
+      <HowItWorks />
       <Feature />
+      <FAQ />
       <CTA />
       <Footer />
     </div>
