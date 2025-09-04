@@ -49,6 +49,9 @@ export const routes = {
   },
 
   // External links
+  website:{
+    path: "https://zlk.com/",
+  },
   facebook: {
     path: "https://www.facebook.com/levikorsinsky/",
   },
