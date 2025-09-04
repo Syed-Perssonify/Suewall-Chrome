@@ -10,14 +10,14 @@ import { HowItWorks } from "./(home)/_howItWorks";
 
 export default function Home() {
   return (
-    <div>
-      {/* <Header /> */}
-      <Hero />
-      <HowItWorks />
-      <Feature />
-      <FAQ />
-      {/* <CTA /> */}
-      <Footer />
-    </div>
+    <> 
+        {/* <Header /> */}
+        <Hero />
+        <HowItWorks />
+        <Feature />
+        <FAQ />
+        {/* <CTA /> */}
+        <Footer />
+      </>
   );
 }

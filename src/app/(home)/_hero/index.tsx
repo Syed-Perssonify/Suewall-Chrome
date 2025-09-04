@@ -24,7 +24,7 @@ export default function Hero() {
         animate="animate"
         variants={staggerContainer}
       >
-        <div className="relative pt-16 sm:pt-20 md:pt-24 lg:pt-36">
+        <div className="relative pt-16 sm:pt-20 md:pt-24 lg:pt-36 -mt-28">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -36,8 +36,7 @@ export default function Hero() {
             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
               {/* Heading */}
               <motion.h1
-                variants={wordStagger}
-                className="mt-6 sm:mt-8  text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl lg:mt-16 xl:text-[5.25rem] px-2 sm:px-0 font-plantin text-dark-green"
+                className="mt-6 sm:mt-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl lg:mt-16 xl:text-[5.25rem] px-2 sm:px-1 font-plantin text-dark-green"
               >
                 <AnimatedText
                   words={hero.heading}
@@ -49,8 +48,7 @@ export default function Hero() {
 
               {/* Description */}
               <motion.p
-                variants={wordStagger}
-                className="mx-auto mt-6 sm:mt-8 max-w-2xl text-balance text-md sm:text-xl px-4 sm:px-0 font-galano text-gray leading-relaxed"
+                className="mx-auto mt-6 sm:mt-8 max-w-2xl text-sm sm:text-lg md:text-xl px-4 sm:px-1 font-galano text-gray leading-relaxed"
               >
                 <AnimatedText
                   words={hero.description}
@@ -63,7 +61,7 @@ export default function Hero() {
               {/* Features */}
               <motion.div
                 variants={staggerContainer}
-                className="mt-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 text-md sm:text-base px-4 sm:px-0"
+                className="mt-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 text-sm sm:text-base px-4 sm:px-0"
               >
                 {hero.features.map((feature, index) => (
                   <FeatureItem
@@ -133,7 +131,7 @@ export default function Hero() {
                 </motion.div>
               </motion.div>
             </div>
-            {/* Hero Video Dialog */}
+            {/* Hero Video Dialog
             <div className="w-full mt-16 max-w-4xl mx-auto h-[600px]">
               <HeroVideoDialog
                 className="block w-full h-11/12 dark:hidden"
@@ -149,7 +147,7 @@ export default function Hero() {
                 thumbnailSrc="/images/11.jpg"
                 thumbnailAlt="Hero Video"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </motion.section>

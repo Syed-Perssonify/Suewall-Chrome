@@ -55,7 +55,7 @@ export const params = {
     social: [
       { href: routes.linkedin.path, icon: "Linkedin" },
       { href: routes.facebook.path, icon: "Facebook" },
-      {  href: routes.twitter.path, icon: "Twitter" },
+      { href: routes.twitter.path, icon: "Twitter" },
       { href: routes.email.path, icon: "Mail" },
     ],
     legal: [
@@ -65,32 +65,11 @@ export const params = {
     copyrightText: `© ${currentYear} Levi & Korsinsky LLP. All rights reserved.`,
   },
   hero: {
-    heading: ["Connect", "trading", "data", "to", "active", "cases—securely."],
+    heading: [
+      "Track Active Securities Cases Instantly — Right from Your Browser.",
+    ],
     description: [
-      "Our",
-      "Chrome",
-      "extension",
-      "lets",
-      "your",
-      "legal",
-      "team",
-      "and",
-      "clients",
-      "securely",
-      "capture",
-      "relevant",
-      "trading-page",
-      "information",
-      "and",
-      "sync",
-      "it",
-      "to",
-      "case",
-      "files—without",
-      "copy‑paste",
-      "or",
-      "data",
-      "leaks.",
+      "Our Chrome extension lets your legal team and clients securely detect relevant trading-page information, check active securities litigation cases, and sync data directly to case files — without copy-paste or data leaks.",
     ],
     features: [
       {
@@ -108,7 +87,7 @@ export const params = {
     ],
     cta: {
       primary: {
-        text: "Install from Chrome Web Store",
+        text: "Install Free on Chrome Web Store]",
         link: routes.chromeWebStore.path,
       },
       secondary: {
@@ -124,21 +103,21 @@ export const params = {
     items: [
       {
         id: "item-1",
-        question: "What is the Levi & Korsinsky Active Case Checker?",
+        question: "How secure is the Chrome extension?",
         answer:
-          "The Active Case Checker is a Chrome extension that allows legal teams and clients to securely capture relevant trading-page information and sync it to case files without copy-paste or data leaks. It's designed with SOC2-ready practices and enterprise-grade security.",
+          "All data is encrypted in transit and at rest, SOC 2-ready, and handled via backend APIs only..",
       },
       {
         id: "item-2",
-        question: "How secure is the Chrome extension?",
+        question: "Does the extension store my personal information?",
         answer:
-          "Our extension implements enterprise-grade security measures including TLS encryption in transit, encryption at rest, and follows SOC2-ready practices. We also provide comprehensive Privacy Policy, Terms of Service, and Data Processing Agreement (DPA) for complete transparency.",
+          "No personal data is stored locally. Your data is processed securely via our backend, with your explicit consent.",
       },
       {
         id: "item-3",
-        question: "How do I install the extension?",
+        question: "What trading platforms does it support?",
         answer:
-          "You can install the extension directly from the Chrome Web Store by clicking the 'Install from Chrome Web Store' button on our website. The installation process is simple and takes just a few clicks.",
+          "Yahoo Finance, Nasdaq, MarketWatch, Morningstar, SeekingAlpha, TipRanks, and many more.",
       },
       {
         id: "item-4",
@@ -148,15 +127,15 @@ export const params = {
       },
       {
         id: "item-5",
-        question: "What trading platforms does the extension support?",
+        question: "Can I disable scanning on certain websites?",
         answer:
-          "Our Chrome extension is designed to work with major trading platforms and financial websites. It captures relevant information from any webpage, making it versatile for various trading and financial data sources.",
+          "Yes, you can manage preferences and snooze scanning from the extension settings.",
       },
       {
         id: "item-6",
-        question: "Is there a cost to use the extension?",
+        question: "Is it free to install?",
         answer:
-          "The extension is available for free download from the Chrome Web Store. For enterprise users or organizations requiring additional features or support, we offer premium plans. Contact our team for pricing details.",
+          "Yes, the extension is free to install from the Chrome Web Store.",
       },
       {
         id: "item-7",
@@ -170,51 +149,64 @@ export const params = {
     supportLinkHref: routes.contact.path,
   },
   howItWorks: {
-    title: "How It Works",
-    subtitle: "Simple steps to get started with our Chrome extension",
+    title: "Get Started in Four Simple Steps",
+    subtitle:
+      "Seamlessly integrate active case tracking into your workflow in minutes.",
     steps: [
       {
         title: "Install the Extension",
         description:
-          "Download our Chrome extension from the Chrome Web Store with just one click. No complex setup required.",
+          "Download from the Chrome Web Store in a single click. No complex setup required.",
         icon: "Download",
       },
       {
-        title: "Navigate to Trading Pages",
+        title: "Browse Finance Sites",
         description:
-          "Visit any trading platform or financial website where you need to capture case-relevant information.",
+          "Visit supported trading and finance platforms like Yahoo Finance, Nasdaq, MarketWatch, Morningstar, TipRanks, SeekingAlpha, and more.",
         icon: "Globe",
       },
       {
-        title: "Capture Data Securely",
+        title: "Auto Detect & Check Cases",
         description:
-          "Click the extension icon to securely capture relevant trading data and case information without any data leaks.",
+          "Our extension automatically detects ticker symbols on supported domains and checks against our Active Case Database in real-time.",
         icon: "Shield",
       },
       {
-        title: "Sync to Case Files",
+        title: "Take Action",
         description:
-          "Automatically sync captured data to your case management system with enterprise-grade security and encryption.",
+          "See matched cases instantly, join class actions securely, and sync captured data directly to your case management system.",
         icon: "FileText",
       },
     ],
     benefits: [
       {
-        title: "SOC2-Ready Security",
+        title: "Real-Time Active Case Detection",
         description:
-          "Built with enterprise-grade security practices and compliance standards.",
+          "Instantly identify if securities are involved in ongoing litigation.",
         icon: "ShieldCheck",
       },
       {
-        title: "Real-Time Sync",
+        title: "Instant Notifications",
         description:
-          "Instant data synchronization to keep your case files always up-to-date.",
+          "Receive real-time alerts for new cases, settlements, and filing deadlines.",
         icon: "Sync",
       },
       {
-        title: "No Data Leaks",
+        title: "Secure Case Sync",
         description:
-          "Secure data capture without copy-paste vulnerabilities or information exposure.",
+          "Automatically sync relevant case information directly to your legal workflows with enterprise-grade encryption.",
+        icon: "Lock",
+      },
+      {
+        title: "Works on Top Financial Platforms",
+        description:
+          "Seamlessly integrates with Yahoo Finance, Nasdaq, MarketWatch, Morningstar, SeekingAlpha, TipRanks, and more.",
+        icon: "Lock",
+      },
+      {
+        title: "Privacy-First Approach",
+        description:
+          "Your personal data stays secure — we never expose secrets to the client side, and no PII is stored without consent.",
         icon: "Lock",
       },
     ],
