@@ -57,7 +57,7 @@ export const Main = ({
   return (
     <>
       <>
-        <div className="w-full bg-white">
+        <div className="w-full bg-white fixed top-0 left-0 right-0 z-50">
           <div className="bg-gradient-to-r from-primary to-secondary text-white p-3 text-center">
             <img
               src="https://dev-chrome-lnk.s3.us-east-1.amazonaws.com/logo-white-text.png"
@@ -68,7 +68,7 @@ export const Main = ({
           </div>
         </div>
       </>
-      <div className="min-h-screen bg-gray-50 p-4">
+      <div className="min-h-screen bg-gray-50 p-4 pt-32">
         <div className="max-w-4xl mx-auto space-y-6">
           {showThankYou ? (
             <div className="flex flex-col items-center justify-center text-center p-8">
