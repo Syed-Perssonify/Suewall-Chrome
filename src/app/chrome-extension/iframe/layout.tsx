@@ -11,11 +11,5 @@ export default function IframeLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className="m-0 p-0">
-        {children}
-      </body>
-    </html>
-  );
+  return <>{children}</>;
 }
