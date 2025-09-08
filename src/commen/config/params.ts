@@ -71,20 +71,6 @@ export const params = {
     description: [
       "Our Chrome extension lets your legal team and clients securely detect relevant trading-page information, check active securities litigation cases, and sync data directly to case files — without copy-paste or data leaks.",
     ],
-    features: [
-      {
-        icon: "ShieldCheck",
-        text: "SOC2-ready practices",
-      },
-      {
-        icon: "Lock",
-        text: "TLS in transit • encryption at rest",
-      },
-      {
-        icon: "FileText",
-        text: "Privacy • Terms • DPA",
-      },
-    ],
     cta: {
       primary: {
         text: "Install Free on Chrome Web Store]",
