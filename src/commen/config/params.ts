@@ -59,7 +59,7 @@ export const params = {
       { href: routes.email.path, icon: "Mail" },
     ],
     legal: [
-      { label: "Privacy Policy", href: routes.termsOfService.path },
+      { label: "Privacy Policy", href: routes.privacyPolicy.path },
       { label: "Terms of Service", href: routes.termsOfService.path },
     ],
     copyrightText: `© ${currentYear} Levi & Korsinsky LLP. All rights reserved.`,
