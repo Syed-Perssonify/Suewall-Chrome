@@ -17,7 +17,7 @@ export default function Hero() {
 
   return (
     <main className="">
-      {/* <DotsBackground /> */}
+      <DotsBackground />
       <motion.section
         initial="initial"
         animate="animate"

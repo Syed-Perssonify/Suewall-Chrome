@@ -14,15 +14,16 @@ export default function Feature() {
             </div>
             <div className="flex gap-3 sm:gap-4 flex-col">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tighter max-w-4xl font-plantin text-left text-gray-500">
-                Streamline Your{" "}
-                <span className="text-primary">Claims Management</span> with Our
-                Chrome Extension
+                Track{" "}
+                <span className="text-primary">Active Securities Cases</span>{" "}
+                Instantly with Our Chrome Extension
               </h2>
               <p className="text-lg sm:text-xl max-w-2xl lg:max-w-3xl leading-relaxed tracking-tight text-gray font-galano text-left">
-                Managing securities litigation cases is already complex. Our
-                Chrome Extension makes it easier and faster than ever to track
-                active cases, manage claims, and stay updated on your
-                investments.
+                Stay informed and in control. Our Chrome Extension automatically
+                detects ticker symbols on supported finance sites, checks for
+                active securities litigation cases in real time, and lets you
+                securely join cases or manage claims — all without leaving your
+                browser.
               </p>
             </div>
           </div>

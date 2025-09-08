@@ -1,78 +1,96 @@
 "use client";
+
+import React, { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import React from "react";
-import { cn } from "@/lib/utils";
-import { useScroll } from "motion/react";
-import { params } from "@/commen/config/params";
 
-export const Header = () => {
-  const [menuState, setMenuState] = React.useState(false);
-  const [scrolled, setScrolled] = React.useState(false);
+const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const pathname = usePathname();
 
-  const { scrollYProgress } = useScroll();
+  const toggleMobileMenu = useCallback(() => {
+    setMobileMenuOpen(prev => !prev);
+  }, []);
 
-  React.useEffect(() => {
-    const unsubscribe = scrollYProgress.on("change", (latest) => {
-      setScrolled(latest > 0.05);
-    });
-    return () => unsubscribe();
-  }, [scrollYProgress]);
+  const closeMobileMenu = useCallback(() => {
+    setMobileMenuOpen(false);
+    setActiveDropdown(null);
+  }, []);
+
+  const toggleDropdown = useCallback((label: string) => {
+    setActiveDropdown(prev => prev === label ? null : label);
+  }, []);
+
+  const isActiveRoute = useCallback((href: string) => {
+    return pathname === href;
+  }, [pathname]);
+
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuOpen && !(event.target as Element).closest('#mobile-menu')) {
+        closeMobileMenu();
+      }
+    };
+
+    if (mobileMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen, closeMobileMenu]);
 
   return (
-    <header>
-      <nav
-        data-state={menuState && "active"}
-        className={cn(
-          "fixed z-20 w-full border-b transition-colors duration-150",
-          scrolled && "bg-background/50 backdrop-blur-3xl"
-        )}
-      >
-        <div className="mx-auto max-w-5xl px-6 transition-all duration-300">
-          <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
-            <div className="flex w-full items-center justify-between gap-12 lg:w-auto">
+    <>
+      <header className="bg-nav-bar sticky top-0 z-50">
+        <div className="zlk-container">
+          <div className="flex items-center justify-between h-20 lg:h-24">
+            {/* Logo Section */}
+            <div className="flex-shrink-0">
               <Link
                 href="/"
-                aria-label="home"
-                className="flex items-center space-x-2"
+                className="flex items-center rounded-md"
+                aria-label="Home"
               >
                 <img
-                  src="https://dev-chrome-lnk.s3.us-east-1.amazonaws.com/logo-white-text.png"
-                  alt="logo"
-                  className="w-48 h-16 object-contain"
+                  src="https://zlk-active-case-extension.s3.us-east-1.amazonaws.com/Green+Text.png"
+                  alt="Logo"
+                  width={500}
+                  height={600}
+                  className="h-12 w-auto lg:h-16 object-contain"
                 />
               </Link>
-
-              <button
-                onClick={() => setMenuState(!menuState)}
-                aria-label={menuState == true ? "Close Menu" : "Open Menu"}
-                className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
-              >
-                <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
-                <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200" />
-              </button>
             </div>
 
-            <div className="bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
-              <div className="lg:hidden">
-              </div>
-              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button asChild variant="default" size="sm">
-                  <Link href="#">
-                    <span>Download Now</span>
-                  </Link>
-                </Button>
-                <Button asChild size="sm">
-                  <Link href="#">
-                    <span>Sign Up</span>
-                  </Link>
-                </Button>
-              </div>
+            {/* Mobile Menu Button */}
+            <div className="xl:hidden">
+              <button
+                onClick={toggleMobileMenu}
+                className="
+                   inline-flex items-center justify-center p-2 rounded-md 
+                   text-black hover:text-primary hover:bg-secondary
+                   focus:outline-none
+                   transition-colors duration-200
+                 "
+                aria-label="Toggle mobile menu"
+              >
+                <Menu className="block h-6 w-6" aria-hidden="true" />
+              </button>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </header>
+    </>
   );
 };
+
+export default Header;

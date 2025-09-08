@@ -6,12 +6,7 @@ export const params = {
   tagline: "Serving families across the United States with Active Cases.",
   domain: "https://zlk.com/",
   header: {
-    links: [
-    //   { label: "Home", href: routes.home.path },
-    //   { label: "About Us", href: routes.about.path },
-    //   { label: "Chrome Extension", href: routes.chromeExtension.path },
-    //   { label: "Contact", href: routes.contact.path },
-  ],
+    links: [],
   },
   contact: {
     email: "info@levikorsinsky.com",
@@ -31,17 +26,6 @@ export const params = {
       phone: "(212) 363-7500",
       email: "info@levikorsinsky.com",
     },
-    services: [
-      {
-        label: "Securities Litigation",
-        href: routes.securitiesLitigation.path,
-      },
-      { label: "Class Actions", href: routes.classActions.path },
-      { label: "Chrome Extension", href: routes.chromeExtension.path },
-    ],
-    companyLinks: [
-      { label: "About Us", href: routes.about.path },
-    ],
     social: [
       { href: routes.linkedin.path, icon: "Linkedin" },
       { href: routes.facebook.path, icon: "Facebook" },

@@ -44,36 +44,6 @@ function Footer() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-semibold mb-4 text-primary">Services</h3>
-              <ul className="space-y-2">
-                {footer.services.map((service, index) => (
-                  <li key={index}>
-                    <Link
-                      href={service.href}
-                      className="text-black hover:text-primary"
-                    >
-                      {service.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4 text-primary">Company</h3>
-              <ul className="space-y-2">
-                {footer.companyLinks.map((link, index) => (
-                  <li key={index}>
-                    <Link
-                      href={link.href}
-                      className="text-black hover:text-primary"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
               <h3 className="font-semibold mb-4 text-primary">Connect</h3>
               <div className="flex items-center gap-4">
                 {footer.social.map((social, index) => (
