@@ -7,16 +7,11 @@ export const params = {
   domain: "https://zlk.com/",
   header: {
     links: [
-      { label: "Home", href: routes.home.path },
-      { label: "About Us", href: routes.about.path },
-      {
-        label: "Securities Litigation",
-        href: routes.securitiesLitigation.path,
-      },
-      { label: "Class Actions", href: routes.classActions.path },
-      { label: "Chrome Extension", href: routes.chromeExtension.path },
-      { label: "Contact", href: routes.contact.path },
-    ],
+    //   { label: "Home", href: routes.home.path },
+    //   { label: "About Us", href: routes.about.path },
+    //   { label: "Chrome Extension", href: routes.chromeExtension.path },
+    //   { label: "Contact", href: routes.contact.path },
+  ],
   },
   contact: {
     email: "info@levikorsinsky.com",
@@ -42,15 +37,10 @@ export const params = {
         href: routes.securitiesLitigation.path,
       },
       { label: "Class Actions", href: routes.classActions.path },
-      { label: "Shareholder Rights", href: routes.shareholderRights.path },
-      { label: "Corporate Governance", href: routes.corporateGovernance.path },
       { label: "Chrome Extension", href: routes.chromeExtension.path },
     ],
     companyLinks: [
       { label: "About Us", href: routes.about.path },
-      { label: "Our Attorneys", href: routes.attorneys.path },
-      { label: "Notable Cases", href: routes.cases.path },
-      { label: "Careers", href: routes.careers.path },
     ],
     social: [
       { href: routes.linkedin.path, icon: "Linkedin" },
@@ -73,7 +63,7 @@ export const params = {
     ],
     cta: {
       primary: {
-        text: "Install Free on Chrome Web Store]",
+        text: "Install Free on Chrome Web Store",
         link: routes.chromeWebStore.path,
       },
       secondary: {

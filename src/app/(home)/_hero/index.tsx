@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { params } from "@/commen/config/params";
 import {
@@ -18,13 +17,13 @@ export default function Hero() {
 
   return (
     <main className="">
-      <DotsBackground />
+      {/* <DotsBackground /> */}
       <motion.section
         initial="initial"
         animate="animate"
         variants={staggerContainer}
       >
-        <div className="relative pt-16 sm:pt-20 md:pt-24 lg:pt-36 -mt-28">
+        <div className="relative pt-16 sm:pt-20 md:pt-24 lg:pt-36 -mt-3.5">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

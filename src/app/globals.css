@@ -1,32 +1,6 @@
 @import "tailwindcss/preflight";
 @tailwind utilities;
 
-@font-face {
-  font-family: "Galano Grotesque";
-  src: url("https://cdn.kiwikidsaba.com/public/fonts/galano-grotesque-alt-regular.woff2")
-    format("woff2");
-  font-weight: 100 900; /* weight range */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Galano Grotesque Medium";
-  src: url("https://cdn.kiwikidsaba.com/public/fonts/galano-grotesque-medium.woff2")
-    format("woff2");
-  font-weight: 100 900; /* weight range */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Plantin MT Pro";
-  src: url("https://cdn.kiwikidsaba.com/public/fonts/plantin-mt-pro-sm-bd.woff2")
-    format("woff2");
-  font-weight: 100 900; /* weight range */
-  font-style: normal;
-  font-display: swap;
-}
 
 @import "tailwindcss";
 
@@ -116,7 +90,6 @@ button:disabled {
   @apply max-w-100 mx-auto px-6 sm:px-10;
 }
 
-/* Dots Background Pattern */
 .dots-background {
   background: radial-gradient(circle at 1px 1px, #1db89b 1px, transparent 0);
   background-size: 24px 24px;
