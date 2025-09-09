@@ -13,7 +13,7 @@ export default function FAQ() {
   const { faq } = params;
 
   return (
-    <section className="py-16 md:py-24 -mt-24">
+    <section id="faq" className="py-16 md:py-24 -mt-24 scroll-mt-24">
       <div className="zlk-container max-w-3xl">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-plantin text-dark-green">
@@ -28,7 +28,7 @@ export default function FAQ() {
           <Accordion
             type="single"
             collapsible
-            className="bg-card ring-muted w-full rounded-2xl border px-4 sm:px-8 py-3 shadow-sm ring-4 dark:ring-0"
+            className="bg-card ring-primary w-full rounded-2xl border px-4 sm:px-8 py-3 ring-4"
           >
             {faq.items.map((item) => (
               <AccordionItem
@@ -36,7 +36,7 @@ export default function FAQ() {
                 value={item.id}
                 className="border-dashed"
               >
-                <AccordionTrigger className="cursor-pointer text-sm sm:text-base hover:no-underline font-galano-medium text-dark-green">
+                <AccordionTrigger className="cursor-pointer hover:text-primary text-sm sm:text-base  font-galano-medium text-dark-green">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent>

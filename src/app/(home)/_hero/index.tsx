@@ -7,23 +7,22 @@ import {
   staggerContainer,
   wordStagger,
 } from "@/commen/config/animations";
-import { AnimatedText } from "@/components/ui/animated-text";
-import { FeatureItem } from "@/components/ui/feature-item";
-import HeroVideoDialog from "@/components/ui/hero-video-dialog";
 import { DotsBackground } from "@/commen/element/layout/dots-background";
+import { AnimatedText } from "@/components/ui/animated-text";
+import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 
 export default function Hero() {
   const { hero } = params;
 
   return (
-    <main className="">
+    <main id="home" className="scroll-mt-24">
       <DotsBackground />
       <motion.section
         initial="initial"
         animate="animate"
         variants={staggerContainer}
       >
-        <div className="relative pt-16 sm:pt-20 md:pt-24 lg:pt-36 -mt-3.5">
+        <div className="relative pt-28 sm:pt-20 md:pt-20 lg:pt-36 -mt-3.5">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -88,31 +87,11 @@ export default function Hero() {
                   variants={fadeInBlur}
                   transition={{ ...fadeInBlur.transition, delay: 1.0 }}
                   className="w-full sm:w-auto"
-                >
-                  <motion.div
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  >
-                    <Link
-                      href={hero.cta.secondary.link}
-                      className="btn-outline w-full sm:w-auto"
-                    >
-                      <motion.span
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 1.2, duration: 0.5 }}
-                        className="text-nowrap"
-                      >
-                        {hero.cta.secondary.text}
-                      </motion.span>
-                    </Link>
-                  </motion.div>
-                </motion.div>
+                ></motion.div>
               </motion.div>
             </div>
-            {/* Hero Video Dialog
-            <div className="w-full mt-16 max-w-4xl mx-auto h-[600px]">
+            {/* Hero Video Dialog */}
+            <div className="w-full mt-16 max-w-4xl mx-auto">
               <HeroVideoDialog
                 className="block w-full h-11/12 dark:hidden"
                 animationStyle="from-center"
@@ -127,7 +106,7 @@ export default function Hero() {
                 thumbnailSrc="/images/11.jpg"
                 thumbnailAlt="Hero Video"
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </motion.section>

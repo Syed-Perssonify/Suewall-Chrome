@@ -1,8 +1,11 @@
 @import "tailwindcss/preflight";
 @tailwind utilities;
 
-
 @import "tailwindcss";
+
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
   --background: #ffffff;
@@ -11,12 +14,6 @@
   --primary: #1db89b;
   --secondary: #d5ffa6;
   --red: #ff483a;
-  --light-blue: #5d9de5;
-  --purple: #988cff;
-  --dark-green: #1b2e12;
-  --dark-green-2: #13250d;
-  --light-green: #cdf282;
-  --cream: #fffce1;
   --white: #ffffff;
   --gray: #808080;
 
@@ -30,13 +27,6 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-red: var(--red);
-  --color-light-blue: var(--light-blue);
-  --color-purple: var(--purple);
-  --color-dark-green: var(--dark-green);
-  --color-dark-green-2: var(--dark-green-2);
-  --color-light-green: var(--light-green);
-  --color-cream: var(--cream);
-  --color-gray: var(--gray);
   --max-width-100: 100rem;
 
   --font-plantin: "Plantin MT Pro", serif;

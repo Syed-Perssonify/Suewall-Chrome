@@ -1,15 +1,17 @@
 import { Footer } from "@/commen/element/layout/footer";
+import { Header } from "@/commen/element/layout/header";
 
 export default function PrivacyPolicy() {
   return (
     <>
+      <Header />
       <div className="w-full py-20">
         <div className="zlk-container">
-          <h1 className="text-4xl font-plantin text-dark-green mb-8">
+          <h1 className="text-4xl font-plantin text-primary mb-8 text-center">
             Privacy Policy
           </h1>
-          <div className="prose max-w-none text-gray font-galano space-y-6">
-            <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+          <div className="space-y-8 text-gray-700">
+            <div className="mb-6 p-4 rounded-lg text-center">
               <p>
                 <strong>Last Updated: September 8, 2025</strong>
               </p>{" "}
@@ -19,7 +21,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Introduction
               </h2>
               <p>
@@ -44,11 +46,11 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Information We Collect
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-2">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-2">
                 1. Information You Provide
               </h3>
               <p>
@@ -64,7 +66,7 @@ export default function PrivacyPolicy() {
                 those requests.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Information Collected Automatically
               </h3>
               <p>
@@ -84,7 +86,7 @@ export default function PrivacyPolicy() {
                 ticker information.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Cookies and Local Storage
               </h3>
               <p>
@@ -101,7 +103,7 @@ export default function PrivacyPolicy() {
                 our main website Privacy Notice.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. Device and Usage Data
               </h3>
               <p>
@@ -114,7 +116,7 @@ export default function PrivacyPolicy() {
                 identifiers unrelated to the Extension's functioning.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 5. Children's Privacy
               </h3>
               <p>
@@ -128,11 +130,11 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 How We Use Your Information
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 1. To Provide and Improve the Service
               </h3>
               <p>
@@ -152,7 +154,7 @@ export default function PrivacyPolicy() {
                 real-time alerts for legal cases).
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. To Communicate with You
               </h3>
               <p>
@@ -166,7 +168,7 @@ export default function PrivacyPolicy() {
                 communications.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. To Maintain Security and Prevent Fraud
               </h3>
               <p>
@@ -179,7 +181,7 @@ export default function PrivacyPolicy() {
                 protection of your data.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. To Comply with Legal Obligations
               </h3>
               <p>
@@ -191,7 +193,7 @@ export default function PrivacyPolicy() {
                 others.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 5. For Improvement and Analytics
               </h3>
               <p>
@@ -206,11 +208,11 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 How We Share Your Information
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 1. No Sale of Personal Data
               </h3>
               <p>
@@ -221,7 +223,7 @@ export default function PrivacyPolicy() {
                 below, and always in line with this policy.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Service Providers
               </h3>
               <p>
@@ -279,7 +281,7 @@ export default function PrivacyPolicy() {
                 use it for the specific services they provide to us.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Within Levi & Korsinsky LLP
               </h3>
               <p>
@@ -300,7 +302,7 @@ export default function PrivacyPolicy() {
                 accordingly.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. Legal Requirements
               </h3>
               <p>
@@ -317,7 +319,7 @@ export default function PrivacyPolicy() {
                 clients, or others.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 5. Business Transfers
               </h3>
               <p>
@@ -332,7 +334,7 @@ export default function PrivacyPolicy() {
                 business transition.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 6. With Your Consent
               </h3>
               <p>
@@ -345,7 +347,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Data Security
               </h2>
               <p>
@@ -384,7 +386,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Data Breach Notification
               </h2>
               <p>
@@ -399,7 +401,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Data Retention
               </h2>
               <p>
@@ -431,11 +433,11 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Your Choices and Rights
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 1. Account Information
               </h3>
               <p>
@@ -446,7 +448,7 @@ export default function PrivacyPolicy() {
                 let us know if any of your details change.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Opt-Out of Communications
               </h3>
               <p>
@@ -459,7 +461,7 @@ export default function PrivacyPolicy() {
                 updates about the Extension, changes to terms, security alerts).
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Limiting Extension Access
               </h3>
               <p>
@@ -475,7 +477,7 @@ export default function PrivacyPolicy() {
                 Extension operates, giving you control over your data exposure.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. Data Access and Deletion
               </h3>
               <p>
@@ -487,7 +489,7 @@ export default function PrivacyPolicy() {
                 collect and to request deletion of personal data (with certain
                 exceptions). We honor valid requests to exercise such rights.
               </p>
-              <p className="mt-3" >
+              <p className="mt-3">
                 To make a request, please contact us using the information
                 provided below. We will respond to data access requests within
                 10 business days and fulfill deletion requests within 30 days.
@@ -500,7 +502,7 @@ export default function PrivacyPolicy() {
                 Retention).
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 5. Global Users – Geographic Scope
               </h3>
               <p>
@@ -526,7 +528,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Changes to This Privacy Policy
               </h2>
               <p>
@@ -545,7 +547,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Contact Us
               </h2>
               <p>

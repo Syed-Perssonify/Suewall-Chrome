@@ -5,12 +5,12 @@ export default function TermsOfService() {
     <>
       <div className="w-full py-20">
         <div className="zlk-container">
-          <h1 className="text-4xl font-plantin text-dark-green mb-8">
+          <h1 className="text-4xl font-plantin text-primary mb-8 text-center">
             Terms of Service
           </h1>
           <div className="prose max-w-none text-gray font-galano space-y-6">
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Acceptance of Terms
               </h2>
               <p>
@@ -35,7 +35,7 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Description of Service
               </h2>
               <p>
@@ -63,11 +63,11 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Eligibility and Jurisdiction
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3">
+              <h3 className="text-xl font-plantin text-primary mb-3">
                 1. Age Requirement
               </h3>
               <p>
@@ -78,7 +78,7 @@ export default function TermsOfService() {
                 you are not 18, you must refrain from using this service.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. United States Users
               </h3>
               <p>
@@ -94,7 +94,7 @@ export default function TermsOfService() {
                 our discretion.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Jurisdiction and Governing Law
               </h3>
               <p>
@@ -109,7 +109,7 @@ export default function TermsOfService() {
                 handled.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. Compliance with Laws
               </h3>
               <p>
@@ -124,11 +124,11 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Account Registration and Security
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3">
+              <h3 className="text-xl font-plantin text-primary mb-3">
                 1. Registration
               </h3>
               <p>
@@ -143,7 +143,7 @@ export default function TermsOfService() {
                 use.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Account Credentials
               </h3>
               <p>
@@ -158,7 +158,7 @@ export default function TermsOfService() {
                 unauthorized access that is not due to our negligence.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. One Account Rule
               </h3>
               <p>
@@ -168,7 +168,7 @@ export default function TermsOfService() {
                 the right to terminate or merge duplicate accounts.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. Account Termination
               </h3>
               <p>
@@ -183,11 +183,11 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 License Grant and Permitted Use
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3">
+              <h3 className="text-xl font-plantin text-primary mb-3">
                 1. License
               </h3>
               <p>
@@ -204,7 +204,7 @@ export default function TermsOfService() {
                 licensors.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Permitted Uses
               </h3>
               <p>
@@ -219,7 +219,7 @@ export default function TermsOfService() {
                 purposes.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Prohibited Uses
               </h3>
               <p>
@@ -302,11 +302,11 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Intellectual Property Rights
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3">
+              <h3 className="text-xl font-plantin text-primary mb-3">
                 1. L&K Intellectual Property
               </h3>
               <p>
@@ -324,7 +324,7 @@ export default function TermsOfService() {
                 written consent.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Limited Use of Content
               </h3>
               <p>
@@ -337,7 +337,7 @@ export default function TermsOfService() {
                 on another website or app.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Feedback
               </h3>
               <p>
@@ -350,7 +350,7 @@ export default function TermsOfService() {
                 sources.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. Third-Party Content
               </h3>
               <p>
@@ -366,11 +366,11 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 No Legal Advice; No Attorney-Client Relationship
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 1. Informational Purposes Only
               </h3>
               <p>
@@ -387,7 +387,7 @@ export default function TermsOfService() {
                 information from the Extension.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. No Attorney-Client Relationship
               </h3>
               <p>
@@ -405,7 +405,7 @@ export default function TermsOfService() {
                 our Privacy Policy.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Attorney Advertising
               </h3>
               <p>
@@ -419,7 +419,7 @@ export default function TermsOfService() {
                 include this notice to comply with ethical rules.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. No Confidential or Privileged Information via Extension
               </h3>
               <p>
@@ -438,7 +438,7 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Disclaimer of Warranties
               </h2>
               <p>
@@ -486,7 +486,7 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Limitation of Liability
               </h2>
               <p>
@@ -531,7 +531,7 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Indemnification
               </h2>
               <p>
@@ -559,11 +559,11 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Modification and Termination
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 1. Changes to the Service
               </h3>
               <p>
@@ -578,7 +578,7 @@ export default function TermsOfService() {
                 notice or liability.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Changes to Terms
               </h3>
               <p>
@@ -594,7 +594,7 @@ export default function TermsOfService() {
                 using the Extension and uninstall it.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Termination by You
               </h3>
               <p>
@@ -609,7 +609,7 @@ export default function TermsOfService() {
                 Policy's retention terms).
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. Termination or Suspension by Us
               </h3>
               <p>
@@ -628,7 +628,7 @@ export default function TermsOfService() {
                 required by law).
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 5. Survival
               </h3>
               <p>
@@ -641,11 +641,11 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Dispute Resolution
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 1. Informal Resolution
               </h3>
               <p>
@@ -656,7 +656,7 @@ export default function TermsOfService() {
                 reaching out to our support or legal team.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Arbitration Agreement
               </h3>
               <p>
@@ -699,7 +699,7 @@ export default function TermsOfService() {
                 jurisdiction clause above will apply to any disputes.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. Time Limit to Raise Disputes
               </h3>
               <p>
@@ -711,11 +711,11 @@ export default function TermsOfService() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-plantin text-dark-green mb-4">
+              <h2 className="text-2xl font-plantin text-primary mb-4">
                 Miscellaneous
               </h2>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 1. Entire Agreement
               </h3>
               <p>
@@ -729,7 +729,7 @@ export default function TermsOfService() {
                 incorporated into and part of these Terms.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 2. Severability
               </h3>
               <p>
@@ -742,7 +742,7 @@ export default function TermsOfService() {
                 the intent of these Terms.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 3. No Waiver
               </h3>
               <p>
@@ -752,7 +752,7 @@ export default function TermsOfService() {
                 writing and signed by an authorized representative of L&K.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 4. Assignment
               </h3>
               <p>
@@ -763,7 +763,7 @@ export default function TermsOfService() {
                 interest as part of a merger or acquisition).
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 5. Third-Party Beneficiaries
               </h3>
               <p>
@@ -774,7 +774,7 @@ export default function TermsOfService() {
                 also protect our affiliates and service providers).
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 6. Contact Information
               </h3>
               <p>
@@ -785,7 +785,7 @@ export default function TermsOfService() {
                 respond to your inquiries promptly.
               </p>
 
-              <h3 className="text-xl font-plantin text-dark-green mb-3 mt-6">
+              <h3 className="text-xl font-plantin text-primary mb-3 mt-6">
                 7. Acknowledgment
               </h3>
               <p>
