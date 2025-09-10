@@ -7,19 +7,10 @@ export default function PrivacyPolicy() {
       <Header />
       <div className="w-full py-20">
         <div className="zlk-container">
-          <h1 className="text-4xl font-plantin text-primary mb-8 text-center">
+          <h1 className="text-4xl font-plantin text-primary mb-8 text-center mt-16">
             Privacy Policy
           </h1>
           <div className="space-y-8 text-gray-700">
-            <div className="mb-6 p-4 rounded-lg text-center">
-              <p>
-                <strong>Last Updated: September 8, 2025</strong>
-              </p>{" "}
-              <p>
-                <strong>Effective Date: September 15, 2025</strong>
-              </p>{" "}
-            </div>
-
             <div>
               <h2 className="text-2xl font-plantin text-primary mb-4">
                 Introduction

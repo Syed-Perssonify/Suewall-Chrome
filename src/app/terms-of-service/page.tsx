@@ -1,11 +1,13 @@
 import { Footer } from "@/commen/element/layout/footer";
+import { Header } from "@/commen/element/layout/header";
 
 export default function TermsOfService() {
   return (
     <>
+      <Header />
       <div className="w-full py-20">
         <div className="zlk-container">
-          <h1 className="text-4xl font-plantin text-primary mb-8 text-center">
+          <h1 className="text-4xl font-plantin text-primary mb-8 text-center mt-16">
             Terms of Service
           </h1>
           <div className="prose max-w-none text-gray font-galano space-y-6">
