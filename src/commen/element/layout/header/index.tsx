@@ -113,7 +113,7 @@ export const Header = () => {
                   size="sm"
                   className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
                 >
-                  <Link href="#">
+                  <Link href="https://chromewebstore.google.com/">
                     <span>Get Started</span>
                   </Link>
                 </Button>
