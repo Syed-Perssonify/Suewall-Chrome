@@ -5,14 +5,19 @@ export const params = {
   name: "Levi & Korsinsky",
   tagline: "Serving families across the United States with Active Cases.",
   domain: "https://zlk.com/",
-  header: {
-    links: [],
-  },
   contact: {
     email: "info@levikorsinsky.com",
     phone: "(212) 363-7500",
     phoneLink: "tel:+12123637500",
     address: "New York, NY",
+  },
+  header: {
+    links: [
+      { name: "Home", href: "#home" },
+      { name: "How It Works", href: "#howitworks" },
+      { name: "Features", href: "#features" },
+      { name: "FAQ", href: "#faq" },
+    ],
   },
   footer: {
     company: {
@@ -49,10 +54,6 @@ export const params = {
       primary: {
         text: "Install Free on Chrome Web Store",
         link: routes.chromeWebStore.path,
-      },
-      secondary: {
-        text: "Request a demo",
-        link: routes.demo.path,
       },
     },
   },
@@ -143,31 +144,31 @@ export const params = {
         title: "Real-Time Active Case Detection",
         description:
           "Instantly identify if securities are involved in ongoing litigation.",
-        icon: "ShieldCheck",
       },
       {
         title: "Instant Notifications",
         description:
           "Receive real-time alerts for new cases, settlements, and filing deadlines.",
-        icon: "Sync",
       },
       {
         title: "Secure Case Sync",
         description:
           "Automatically sync relevant case information directly to your legal workflows with enterprise-grade encryption.",
-        icon: "Lock",
       },
       {
         title: "Works on Top Financial Platforms",
         description:
           "Seamlessly integrates with Yahoo Finance, Nasdaq, MarketWatch, Morningstar, SeekingAlpha, TipRanks, and more.",
-        icon: "Lock",
       },
       {
         title: "Privacy-First Approach",
         description:
           "Your personal data stays secure — we never expose secrets to the client side, and no PII is stored without consent.",
-        icon: "Lock",
+      },
+      {
+        title: "User-Friendly Interface",
+        description:
+          "Designed for ease of use, our extension features an intuitive interface that requires no technical expertise.",
       },
     ],
   },

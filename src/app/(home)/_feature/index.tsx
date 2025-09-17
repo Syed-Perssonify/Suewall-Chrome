@@ -3,15 +3,18 @@ import Image from "next/image";
 
 export default function Feature() {
   return (
-    <div className="w-full py-16 md:py-24 lg:py-32 -mt-20">
+    <section
+      id="features"
+      className="w-full py-16 md:py-24 lg:py-32 -mt-20 scroll-mt-24"
+    >
       <div className="zlk-container">
         <div className="flex flex-col gap-12 sm:gap-16">
           <div className="flex gap-4 sm:gap-6 flex-col items-start">
-            <div>
+            {/* <div>
               <Badge className="bg-primary text-black font-galano-medium px-3 sm:px-4 py-2 text-sm sm:text-md">
                 Chrome Extension
               </Badge>
-            </div>
+            </div> */}
             <div className="flex gap-3 sm:gap-4 flex-col">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tighter max-w-4xl font-plantin text-left text-gray-500">
                 Track{" "}
@@ -29,7 +32,7 @@ export default function Feature() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            <div className="group flex flex-col gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-white border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl">
+            <div className="group flex flex-col gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-white border border-primary transition-all duration-300">
               <div className="bg-transparent rounded-xl aspect-video mb-2 flex items-center justify-center">
                 <Image
                   src="/images/feature/1.png"
@@ -49,7 +52,7 @@ export default function Feature() {
               </p>
             </div>
 
-            <div className="group flex flex-col gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-white border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl">
+            <div className="group flex flex-col gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-white border border-primary transition-all duration-300">
               <div className="bg-transparent rounded-xl aspect-video mb-2 flex items-center justify-center">
                 <Image
                   src="/images/feature/2.png"
@@ -69,7 +72,7 @@ export default function Feature() {
               </p>
             </div>
 
-            <div className="group flex flex-col gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-white border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl">
+            <div className="group flex flex-col gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-white border border-primary transition-all duration-300">
               <div className="bg-transparent rounded-xl aspect-video mb-2 flex items-center justify-center">
                 <Image
                   src="/images/feature/3.png"
@@ -80,12 +83,12 @@ export default function Feature() {
                 />
               </div>
               <h3 className="text-xl sm:text-2xl tracking-tight font-plantin text-dark-green">
-                Claims Management
+                Easy to Join
               </h3>
               <p className="text-muted-foreground text-sm sm:text-base font-galano leading-relaxed">
-                Organize and track all your claims in one place. Monitor filing
-                deadlines, settlement amounts, and case progress with our
-                intuitive dashboard.
+                Seamlessly join securities litigation cases directly from your
+                browser. Our extension guides you through the process step by
+                step, making it simple and hassle-free.
               </p>
             </div>
           </div>
@@ -102,7 +105,7 @@ export default function Feature() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

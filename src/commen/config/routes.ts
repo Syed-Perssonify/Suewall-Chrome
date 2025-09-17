@@ -67,7 +67,7 @@ export const routes = {
 
   // Chrome Web Store
   chromeWebStore: {
-    path: "https://chromewebstore.google.com/detail/active-case-checker/jgjgjgjgjgjgjgjgjgjgjgjgjgjgjgjg", // Replace with actual Chrome Web Store link
+    path: "https://chromewebstore.google.com/", // Replace with actual Chrome Web Store link
   },
 
   // Demo
