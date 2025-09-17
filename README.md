@@ -20,6 +20,44 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+
+## Chrome Extension Iframe UI
+
+This project includes a dedicated iframe-based UI for rendering inside the Chrome extension. The iframe is located at:
+
+`src/app/chrome-extension/iframe/`
+
+### How the iframe works
+
+- The iframe is loaded by the Chrome extension to display interactive UI elements, such as active cases and actions.
+- The main entry point is `iframe/page.tsx`, which receives query parameters (e.g., `tkn` for token, `dt` for data) and passes them to the UI.
+- The UI logic is handled in `_main/index.tsx`, which renders the list of active cases, allows users to select and join cases, and communicates with the parent extension using `window.parent.postMessage`.
+- Styling is managed via `iframe.css` for a seamless embedded experience.
+
+### Integration
+
+To render the UI inside the Chrome extension:
+
+1. The extension loads the iframe from the deployed Next.js app (e.g., `https://your-app.com/chrome-extension/iframe`).
+2. Query parameters are passed to the iframe for authentication and data (e.g., `?tkn=TOKEN&dt=ENCODED_DATA`).
+3. The iframe UI reads these parameters, decodes the data, and displays the relevant information.
+4. User actions (such as joining a case) trigger API calls and send messages back to the parent extension for cache updates and further actions.
+
+#### Example iframe embed code (in Chrome extension):
+
+```html
+<iframe src="https://your-app.com/chrome-extension/iframe?tkn=TOKEN&dt=ENCODED_DATA" style="width:100%;height:600px;border:none;"></iframe>
+```
+
+### Files of interest
+
+- `src/app/chrome-extension/iframe/page.tsx`: Handles query params and passes data to UI.
+- `src/app/chrome-extension/iframe/_main/index.tsx`: Main UI logic and rendering.
+- `src/app/chrome-extension/iframe/layout.tsx`: Layout wrapper for iframe content.
+- `src/app/chrome-extension/iframe/iframe.css`: Custom styles for iframe UI.
+
+---
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
