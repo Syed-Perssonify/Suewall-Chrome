@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { params } from "@/commen/config/params";
+import { mediaUrl } from "@/commen/config/utils";
 
 const menuItems = params.header.links;
 
@@ -45,7 +46,7 @@ export const Header = () => {
                 className="flex items-center space-x-2"
               >
                 <img
-                  src="https://zlk-active-case-extension.s3.us-east-1.amazonaws.com/Green+Text.png"
+                  src={mediaUrl("/images/logo/logo.svg")}
                   alt="logo"
                   className="h-8 w-auto object-contain sm:h-10"
                 />

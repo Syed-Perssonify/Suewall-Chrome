@@ -1,5 +1,6 @@
 import { currentYear } from "./utils";
 import { routes } from "./routes";
+import { icons } from "lucide-react";
 
 export const params = {
   name: "Levi & Korsinsky",
@@ -45,14 +46,60 @@ export const params = {
   },
   hero: {
     heading: [
-      "Track Active Securities Cases Instantly — Right from Your Browser.",
+      "Track",
+      "Active",
+      "Securities",
+      "Cases",
+      "Instantly",
+      "— Right",
+      "from",
+      "Your",
+      "Browser.",
     ],
     description: [
-      "Our Chrome extension lets your legal team and clients securely detect relevant trading-page information, check active securities litigation cases, and sync data directly to case files — without copy-paste or data leaks.",
+      "Our",
+      "Chrome",
+      "extension",
+      "is",
+      "designed",
+      "for",
+      "shareholders",
+      "and",
+      "investors.",
+      "Instantly",
+      "detect",
+      "whether",
+      "the",
+      "stocks",
+      "you",
+      "are",
+      "following",
+      "are",
+      "involved",
+      "in",
+      "securities",
+      "class",
+      "actions,",
+      "receive",
+      "timely",
+      "alerts,",
+      "and",
+      "take",
+      "action",
+      "—",
+      "all",
+      "while",
+      "you",
+      "are",
+      "browsing",
+      "your",
+      "favorite",
+      "finance",
+      "sites.",
     ],
     cta: {
       primary: {
-        text: "Install Free on Chrome Web Store",
+        text: " Install Free on Chrome Web Store",
         link: routes.chromeWebStore.path,
       },
     },
@@ -110,65 +157,65 @@ export const params = {
     supportLinkHref: routes.contact.path,
   },
   howItWorks: {
-    title: "Get Started in Four Simple Steps",
+    title: "Get Started in 3 Simple Steps",
     subtitle:
       "Seamlessly integrate active case tracking into your workflow in minutes.",
     steps: [
       {
         title: "Install the Extension",
         description:
-          "Download from the Chrome Web Store in a single click. No complex setup required.",
+          "Easily add the extension from the Chrome Web Store in seconds — no technical setup.",
         icon: "Download",
       },
       {
-        title: "Browse Finance Sites",
+        title: "Get Alerts While You Browse",
         description:
-          "Visit supported trading and finance platforms like Yahoo Finance, Nasdaq, MarketWatch, Morningstar, TipRanks, SeekingAlpha, and more.",
+          "Keep browsing your favorite finance website — the extension spots tickers, checks for active class actions, and shows alerts instantly. No extra effort.",
         icon: "Globe",
-      },
-      {
-        title: "Auto Detect & Check Cases",
-        description:
-          "Our extension automatically detects ticker symbols on supported domains and checks against our Active Case Database in real-time.",
-        icon: "Shield",
       },
       {
         title: "Take Action",
         description:
-          "See matched cases instantly, join class actions securely, and sync captured data directly to your case management system.",
+          "With a single click, explore case details, enquire about class actions, or connect with legal support. No additional effort.",
         icon: "FileText",
       },
     ],
     benefits: [
       {
-        title: "Real-Time Active Case Detection",
+        title: "Real-Time Case Detection",
         description:
-          "Instantly identify if securities are involved in ongoing litigation.",
+          "Instantly determine if your investments are tied to ongoing securities litigation, enabling you to make informed financial decisions.",
+        images: "/images/icons/real-time.svg",
       },
       {
         title: "Instant Notifications",
         description:
-          "Receive real-time alerts for new cases, settlements, and filing deadlines.",
+          "Stay ahead with always-on, real-time alerts for new filings, settlements, and important deadlines, and avoid being caught off guard.",
+        images: "/images/icons/instant-notifications.svg",
       },
       {
-        title: "Secure Case Sync",
+        title: "Secure & Private",
         description:
-          "Automatically sync relevant case information directly to your legal workflows with enterprise-grade encryption.",
+          "Your personal data is safeguarded with strict privacy standards — we never track your activity or store your financial information.",
+        images: "/images/icons/security.svg",
       },
       {
         title: "Works on Top Financial Platforms",
         description:
-          "Seamlessly integrates with Yahoo Finance, Nasdaq, MarketWatch, Morningstar, SeekingAlpha, TipRanks, and more.",
+          "Integrates seamlessly with Yahoo Finance, Nasdaq, MarketWatch, Morningstar, SeekingAlpha, TipRanks, and more.",
+        images: "/images/icons/financial-platforms.svg",
       },
       {
-        title: "Privacy-First Approach",
+        title: "Simple to Use",
         description:
-          "Your personal data stays secure — we never expose secrets to the client side, and no PII is stored without consent.",
+          "Built with shareholders in mind — an intuitive interface that’s simple and reassuring. Easy pathways to protect investments and exercise rights.",
+        images: "/images/icons/simple-to-use.svg",
       },
       {
-        title: "User-Friendly Interface",
+        title: "Effortless Monitoring",
         description:
-          "Designed for ease of use, our extension features an intuitive interface that requires no technical expertise.",
+          "No more manual searching or cross-checking — the extension delivers case information proactively, so you can focus on your investments.",
+        images: "/images/icons/effortless-monitoring.svg",
       },
     ],
   },

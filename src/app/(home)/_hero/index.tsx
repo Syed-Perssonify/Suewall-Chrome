@@ -33,17 +33,17 @@ export default function Hero() {
           <div className="zlk-container">
             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
               {/* Heading */}
-              <motion.h1 className="mt-6 sm:mt-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl lg:mt-16 xl:text-[5.25rem] px-2 sm:px-1 font-plantin text-dark-green">
+              <motion.h1 className="mt-6 sm:mt-8 text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl lg:mt-16 xl:text-[5.25rem] px-2 sm:px-1 font-plantin text-dark-green">
                 <AnimatedText
                   words={hero.heading}
-                  className="mr-6"
+                  className="mr-3"
                   delay={0.5}
                   staggerDelay={0.1}
                 />
               </motion.h1>
 
               {/* Description */}
-              <motion.p className="mx-auto mt-6 sm:mt-8 max-w-2xl text-sm sm:text-lg md:text-xl px-4 sm:px-1 font-galano text-gray leading-relaxed">
+              <motion.p className="mx-auto mt-6 sm:mt-8 max-w-4xl text-sm sm:text-lg md:text-xl px-4 sm:px-1 font-galano text-black leading-relaxed">
                 <AnimatedText
                   words={hero.description}
                   className="mr-2"

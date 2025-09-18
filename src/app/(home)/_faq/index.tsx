@@ -48,7 +48,7 @@ export default function FAQ() {
             ))}
           </Accordion>
 
-          <p className="text-muted-foreground mt-6 sm:mt-8 font-galano text-gray">
+          <p className="text-muted-foreground text-center mt-6 sm:mt-8 font-galano text-gray">
             {faq.supportText}{" "}
             <Link
               href={faq.supportLinkHref}

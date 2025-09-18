@@ -8,7 +8,10 @@ import { cn } from "@/lib/utils";
 
 export default function CTA() {
   return (
-    <section id="solution" className="relative w-full mx-auto overflow-hidden rounded-4xl border border-primary shadow-md px-6 py-16 md:px-16 scroll-mt-24">
+    <section
+      id="solution"
+      className="relative w-full mx-auto overflow-hidden rounded-4xl border border-primary shadow-md px-6 py-16 md:px-16 scroll-mt-24"
+    >
       <div className="zlk-container">
         <div className=" zlk-container flex flex-col-reverse items-center md:flex-row">
           <div className="z-10 max-w-xl text-left">
