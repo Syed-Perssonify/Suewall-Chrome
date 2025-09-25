@@ -53,7 +53,7 @@ export default function Feature() {
               >
                 <div className="bg-transparent rounded-xl aspect-video mb-2 flex items-center justify-center">
                   <img
-                    src={mediaUrl(card.image)}
+                    src={card.image}
                     alt={card.alt}
                     width={100}
                     height={100}
