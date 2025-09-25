@@ -91,7 +91,7 @@ export default function Hero() {
               </motion.div>
             </div>
             {/* Hero Video Dialog */}
-            <div className="w-full mt-16 max-w-4xl mx-auto">
+            {/* <div className="w-full mt-16 max-w-4xl mx-auto">
               <HeroVideoDialog
                 className="block w-full h-11/12 dark:hidden"
                 animationStyle="from-center"
@@ -106,7 +106,7 @@ export default function Hero() {
                 thumbnailSrc="/images/11.jpg"
                 thumbnailAlt="Hero Video"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </motion.section>

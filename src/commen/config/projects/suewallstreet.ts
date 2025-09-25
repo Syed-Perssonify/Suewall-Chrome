@@ -182,26 +182,30 @@ export const params = {
   features: {
     title: "Stay Informed",
     titleHighlight: "Protect Your Investments.",
-    description: "Your portfolio deserves a heads-up, not hindsight. Our Chrome extension puts lawsuit radar right on your finance pages — before you miss deadlines, settlements, or your chance at recovery.",
+    description:
+      "Your portfolio deserves a heads-up, not hindsight. Our Chrome extension puts lawsuit radar right on your finance pages — before you miss deadlines, settlements, or your chance at recovery.",
     cards: [
       {
         title: "Cut Down Risk",
-        description: "Catch litigation before it nukes your holdings. Pivot, diversify, or seek legal advice before things escalate.",
-        image: "/images/22.png",
-        alt: "Active Case Checker"
+        description:
+          "Catch litigation before it nukes your holdings. Pivot, diversify, or seek legal advice before things escalate.",
+        image: "/images/features/Cut Down Risk.png",
+        alt: "Active Case Checker",
       },
       {
         title: "Claim What's Yours",
-        description: "Don't leave settlement checks on the table. If a company cooked the books, you are entitled to a refund.",
-        image: "/images/Claim What's Yours-2 (1).png",
-        alt: "Instant Notifications"
+        description:
+          "Don't leave settlement checks on the table. If a company cooked the books, you are entitled to a refund.",
+        image: "/images/features/Claim What's Yours.png",
+        alt: "Instant Notifications",
       },
       {
         title: "See the Big Picture",
-        description: "One dashboard. Multiple holdings. Lawsuit alerts are consolidated so you know exactly where your portfolio stands.",
-        image: "/images/Claim What's Yours.png",
-        alt: "Big Picture View"
-      }
+        description:
+          "One dashboard. Multiple holdings. Lawsuit alerts are consolidated so you know exactly where your portfolio stands.",
+        image: "/images/features/See the Big Picture.png",
+        alt: "Big Picture View",
+      },
     ],
     trusted: {
       title: "Trusted by thousands of investors across the United States",
@@ -209,19 +213,19 @@ export const params = {
         {
           icon: "/icons/instant-setup.svg",
           text: "Free to Install",
-          alt: "Free to Install"
+          alt: "Free to Install",
         },
         {
           icon: "/icons/no-personal-data-required.svg",
-          text: "No Personal Data Required", 
-          alt: "No Personal Data Required"
+          text: "No Personal Data Required",
+          alt: "No Personal Data Required",
         },
         {
           icon: "/icons/cloud-arrow-down.svg",
           text: "Instant Setup",
-          alt: "Instant Setup"
-        }
-      ]
-    }
+          alt: "Instant Setup",
+        },
+      ],
+    },
   },
 };

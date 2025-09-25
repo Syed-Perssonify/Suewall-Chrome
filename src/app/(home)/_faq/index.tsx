@@ -8,13 +8,6 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { params } from "@/commen/config/params";
-import {
-  Key,
-  ReactElement,
-  JSXElementConstructor,
-  ReactNode,
-  ReactPortal,
-} from "react";
 
 export default function FAQ() {
   const { faq } = params;
@@ -38,60 +31,10 @@ export default function FAQ() {
             className="bg-card ring-primary w-full rounded-2xl border px-4 sm:px-8 py-3 ring-4"
           >
             {faq.items.map(
-              (item: {
-                id: Key | null | undefined;
-                question:
-                  | string
-                  | number
-                  | bigint
-                  | boolean
-                  | ReactElement<unknown, string | JSXElementConstructor<any>>
-                  | Iterable<ReactNode>
-                  | ReactPortal
-                  | Promise<
-                      | string
-                      | number
-                      | bigint
-                      | boolean
-                      | ReactPortal
-                      | ReactElement<
-                          unknown,
-                          string | JSXElementConstructor<any>
-                        >
-                      | Iterable<ReactNode>
-                      | null
-                      | undefined
-                    >
-                  | null
-                  | undefined;
-                answer:
-                  | string
-                  | number
-                  | bigint
-                  | boolean
-                  | ReactElement<unknown, string | JSXElementConstructor<any>>
-                  | Iterable<ReactNode>
-                  | ReactPortal
-                  | Promise<
-                      | string
-                      | number
-                      | bigint
-                      | boolean
-                      | ReactPortal
-                      | ReactElement<
-                          unknown,
-                          string | JSXElementConstructor<any>
-                        >
-                      | Iterable<ReactNode>
-                      | null
-                      | undefined
-                    >
-                  | null
-                  | undefined;
-              }) => (
+              (item: { id: string; question: string; answer: string }) => (
                 <AccordionItem
                   key={item.id}
-                  value={item.id?.toString() ?? ""}
+                  value={item.id}
                   className="border-dashed"
                 >
                   <AccordionTrigger className="cursor-pointer hover:text-primary text-sm sm:text-base  font-galano-medium text-dark-green">

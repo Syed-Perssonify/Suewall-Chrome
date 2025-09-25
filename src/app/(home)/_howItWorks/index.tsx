@@ -162,7 +162,7 @@ export const HowItWorks = () => {
                 index: React.Key | null | undefined
               ) => (
                 <div key={index} className="text-center">
-                  <img
+                  {/* <img
                     src={mediaUrl(benefit.images)}
                     alt={
                       typeof benefit.title === "string"
@@ -171,7 +171,7 @@ export const HowItWorks = () => {
                     }
                     className="h-11 mx-auto mb-4"
                     loading="lazy"
-                  />
+                  /> */}
                   <h4 className="text-xl font-plantin mb-3 text-balance">
                     {benefit.title}
                   </h4>
