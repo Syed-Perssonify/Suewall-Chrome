@@ -20,16 +20,76 @@ export const HowItWorks = () => {
 
         {/* Steps */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {steps.map((step, index) => (
-            <div key={index} className="text-center group">
-              <h3 className="text-xl font-plantin mb-4 text-balance">
-                {step.title}
-              </h3>
-              <p className="text-gray font-galano leading-relaxed">
-                {step.description}
-              </p>
-            </div>
-          ))}
+          {steps.map(
+            (
+              step: {
+                title:
+                  | string
+                  | number
+                  | bigint
+                  | boolean
+                  | React.ReactElement<
+                      unknown,
+                      string | React.JSXElementConstructor<any>
+                    >
+                  | Iterable<React.ReactNode>
+                  | React.ReactPortal
+                  | Promise<
+                      | string
+                      | number
+                      | bigint
+                      | boolean
+                      | React.ReactPortal
+                      | React.ReactElement<
+                          unknown,
+                          string | React.JSXElementConstructor<any>
+                        >
+                      | Iterable<React.ReactNode>
+                      | null
+                      | undefined
+                    >
+                  | null
+                  | undefined;
+                description:
+                  | string
+                  | number
+                  | bigint
+                  | boolean
+                  | React.ReactElement<
+                      unknown,
+                      string | React.JSXElementConstructor<any>
+                    >
+                  | Iterable<React.ReactNode>
+                  | React.ReactPortal
+                  | Promise<
+                      | string
+                      | number
+                      | bigint
+                      | boolean
+                      | React.ReactPortal
+                      | React.ReactElement<
+                          unknown,
+                          string | React.JSXElementConstructor<any>
+                        >
+                      | Iterable<React.ReactNode>
+                      | null
+                      | undefined
+                    >
+                  | null
+                  | undefined;
+              },
+              index: React.Key | null | undefined
+            ) => (
+              <div key={index} className="text-center group">
+                <h3 className="text-xl font-plantin mb-4 text-balance">
+                  {step.title}
+                </h3>
+                <p className="text-gray font-galano leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            )
+          )}
         </div>
 
         {/* Benefits */}
@@ -41,22 +101,86 @@ export const HowItWorks = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="text-center">
-                <img
-                  src={mediaUrl(benefit.images)}
-                  alt={benefit.title}
-                  className="h-11 mx-auto mb-4"
-                  loading="lazy"
-                />
-                <h4 className="text-xl font-plantin mb-3 text-balance">
-                  {benefit.title}
-                </h4>
-                <p className="text-gray font-galano leading-relaxed">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
+            {benefits.map(
+              (
+                benefit: {
+                  images: string;
+                  title:
+                    | string
+                    | number
+                    | bigint
+                    | boolean
+                    | React.ReactElement<
+                        unknown,
+                        string | React.JSXElementConstructor<any>
+                      >
+                    | Iterable<React.ReactNode>
+                    | Promise<
+                        | string
+                        | number
+                        | bigint
+                        | boolean
+                        | React.ReactPortal
+                        | React.ReactElement<
+                            unknown,
+                            string | React.JSXElementConstructor<any>
+                          >
+                        | Iterable<React.ReactNode>
+                        | null
+                        | undefined
+                      >
+                    | null
+                    | undefined;
+                  description:
+                    | string
+                    | number
+                    | bigint
+                    | boolean
+                    | React.ReactElement<
+                        unknown,
+                        string | React.JSXElementConstructor<any>
+                      >
+                    | Iterable<React.ReactNode>
+                    | React.ReactPortal
+                    | Promise<
+                        | string
+                        | number
+                        | bigint
+                        | boolean
+                        | React.ReactPortal
+                        | React.ReactElement<
+                            unknown,
+                            string | React.JSXElementConstructor<any>
+                          >
+                        | Iterable<React.ReactNode>
+                        | null
+                        | undefined
+                      >
+                    | null
+                    | undefined;
+                },
+                index: React.Key | null | undefined
+              ) => (
+                <div key={index} className="text-center">
+                  <img
+                    src={mediaUrl(benefit.images)}
+                    alt={
+                      typeof benefit.title === "string"
+                        ? benefit.title
+                        : String(benefit.title ?? "")
+                    }
+                    className="h-11 mx-auto mb-4"
+                    loading="lazy"
+                  />
+                  <h4 className="text-xl font-plantin mb-3 text-balance">
+                    {benefit.title}
+                  </h4>
+                  <p className="text-gray font-galano leading-relaxed">
+                    {benefit.description}
+                  </p>
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
