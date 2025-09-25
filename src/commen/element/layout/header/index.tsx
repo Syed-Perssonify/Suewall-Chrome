@@ -46,11 +46,7 @@ export const Header = () => {
                 className="flex items-center space-x-2"
               >
                 <img
-                  src={
-                    process.env.NEXT_PUBLIC_PROJECT_SUE === "suewallstreet"
-                      ? mediaUrl("/images/logo/logo.svg")
-                      : mediaUrl("/images/logo/logo.svg")
-                  }
+                  src="https://suewallst-chrome-extension.s3.us-east-1.amazonaws.com/public/images/logo/logo.svg"
                   alt="logo"
                   className="h-8 w-auto object-contain sm:h-10"
                 />
