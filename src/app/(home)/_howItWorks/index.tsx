@@ -36,7 +36,7 @@ export const HowItWorks = () => {
         <div className="bg-primary/5 border border-black rounded-2xl w-full p-8 md:p-12">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-plantin text-balance mb-4 text-gray-500">
-              Why Shareholders Choose This Extension
+              Why Smart Investors Don’t Browse Without Us
             </h3>
           </div>
 

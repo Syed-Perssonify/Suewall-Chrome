@@ -16,7 +16,7 @@ export default function FAQ() {
     <section id="faq" className="py-16 md:py-24 -mt-24 scroll-mt-24">
       <div className="zlk-container max-w-3xl">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-plantin text-dark-green">
+          <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-plantin text-gray-500">
             {faq.title}
           </h2>
           <p className="text-muted-foreground mt-4 sm:mt-6 text-balance text-base sm:text-lg font-galano text-gray">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/commen/lib/utils";
 import { params } from "@/commen/config/params";
 import { mediaUrl } from "@/commen/config/utils";
 
@@ -46,7 +46,11 @@ export const Header = () => {
                 className="flex items-center space-x-2"
               >
                 <img
-                  src={mediaUrl("/images/logo/logo.svg")}
+                  src={
+                    process.env.NEXT_PUBLIC_PROJECT_SUE === "suewallstreet"
+                      ? mediaUrl("/images/logo/logo.svg")
+                      : mediaUrl("/images/logo/logo.svg")
+                  }
                   alt="logo"
                   className="h-8 w-auto object-contain sm:h-10"
                 />

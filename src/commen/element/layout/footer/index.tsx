@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Linkedin, Mail, Phone, MapPin, Facebook } from "lucide-react";
 import { params } from "@/commen/config/params";
 import { routes } from "@/commen/config/routes";
+import { mediaUrl } from "@/commen/config/utils";
 
 function Footer() {
   const { footer } = params;
@@ -15,9 +16,13 @@ function Footer() {
           <div className="mb-8 md:mb-0 flex-1">
             <Link href={routes.website.path} className="inline-block">
               <img
-                src="/images/Logo.png"
-                alt="footer-logo"
-                className="w-48 h-16 object-contain mb-4"
+                src={
+                  process.env.NEXT_PUBLIC_PROJECT_SUE === "suewallstreet"
+                    ? mediaUrl("/images/logo/logo.svg")
+                    : mediaUrl("/images/logo/logo.svg")
+                }
+                alt="logo"
+                className="h-12 w-auto object-contain sm:h-10"
               />
             </Link>
 
@@ -38,7 +43,9 @@ function Footer() {
             </div>
             <div className="mt-6">
               <Link href="/contact">
-                <Button className="btn-primary">Contact Us</Button>
+                <Button variant={"default"} className="text-white rounded-3xl">
+                  Contact Us
+                </Button>
               </Link>
             </div>
           </div>

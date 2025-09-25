@@ -1,0 +1,84 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@import "tailwindcss";
+
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --primary: #ff483a;
+  --secondary: #d5ffa6;
+  --white: #ffffff;
+  --gray: #808080;
+
+  --font-plantin: "Plantin MT Pro", serif;
+  --font-galano: "Galano Grotesque", sans-serif;
+
+  --font-galano-medium: "Galano Grotesque Medium", sans-serif;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --max-width-100: 100rem;
+
+  --font-plantin: "Plantin MT Pro", serif;
+  --font-galano: "Galano Grotesque", sans-serif;
+  --font-galano-medium: "Galano Grotesque Medium", sans-serif;
+
+  /* horizontal breakpoint */
+  --breakpoint-3xl: 2560px;
+
+  /* Vertical breakpoint */
+  --breakpoint-vertical: 640px;
+  --breakpoint-vertical-sm: 768px;
+  --breakpoint-vertical-md: 1024px;
+  --breakpoint-vertical-lg: 1280px;
+  --breakpoint-vertical-xl: 1536px;
+  --breakpoint-vertical-2xl: 1920px;
+  --breakpoint-vertical-3xl: 2560px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Galano Grotesque", sans-serif;
+  overflow-x: hidden !important;
+}
+
+.text-last-center {
+  text-align-last: center;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+/* button disabled */
+button:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+/* Components */
+.btn-primary {
+  @apply text-black font-galano cursor-pointer py-2 md:py-3 px-6 md:px-8 rounded-full bg-primary  transition-colors shadow-lg flex items-center justify-center;
+}
+
+.btn-outline {
+  @apply text-black font-galano cursor-pointer py-3 px-8 rounded-full border-2 border-primary hover:bg-primary hover:text-black transition-colors shadow-lg flex items-center justify-center;
+}
+
+.zlk-container {
+  @apply max-w-100 mx-auto px-6 sm:px-10;
+}
+
+.dots-background {
+  background: radial-gradient(circle at 1px 1px, #ff483a 1px, transparent 0);
+  background-size: 24px 24px;
+}

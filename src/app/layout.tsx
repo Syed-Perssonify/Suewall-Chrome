@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+if (process.env.NEXT_PUBLIC_PROJECT === "suewallstreet") {
+  console.log("Loading suewallst.css");
+  require("./suewallst.css");
+} else {
+  console.log("Loading chromeextension.css");
+  require("./chromeextension.css");
+}
+// import "./globals.css";
 import { params } from "@/commen/config/params";
 
 const geistSans = Geist({
@@ -23,6 +30,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log("Project:", process.env.NEXT_PUBLIC_PROJECT);
+  console.log(
+    "process.env.NEXT_PUBLIC_PROJECT:",
+    process.env.NEXT_PUBLIC_PROJECT === "suewallstreet"
+  );
+
   return (
     <html lang="en">
       <body

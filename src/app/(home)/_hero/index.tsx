@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="zlk-container">
             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
               {/* Heading */}
-              <motion.h1 className="mt-6 sm:mt-8 text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl lg:mt-16 xl:text-[5.25rem] px-2 sm:px-1 font-plantin text-dark-green">
+              <motion.h1 className="mt-6 sm:mt-8 text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl lg:mt-16 xl:text-[5.25rem] px-2 sm:px-1 font-plantin text-gray-500">
                 <AnimatedText
                   words={hero.heading}
                   className="mr-3"
