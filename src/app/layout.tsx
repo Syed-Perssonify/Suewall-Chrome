@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-if (process.env.NEXT_PUBLIC_PROJECT === "suewallstreet") {
-  console.log("Loading suewallst.css");
-  require("./suewallst.css");
-} else {
-  console.log("Loading chromeextension.css");
-  require("./chromeextension.css");
-}
+import "./suewallst.css";
 // import "./globals.css";
 import { params } from "@/commen/config/params";
 
