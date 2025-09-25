@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "dev:suewallstreet": "cross-env NEXT_PUBLIC_PROJECT=suewallstreet next dev",
-    "dev:chromeextension": "cross-env NEXT_PUBLIC_PROJECT=chromeextension next dev",
     "build": "next build",
     "start": "next start"
   },
