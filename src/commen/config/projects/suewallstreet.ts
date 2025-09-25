@@ -189,21 +189,24 @@ export const params = {
         title: "Cut Down Risk",
         description:
           "Catch litigation before it nukes your holdings. Pivot, diversify, or seek legal advice before things escalate.",
-        image: "/images/features/Claim What's Yours.png",
+        image:
+          "https://suewallst-chrome-extension.s3.us-east-1.amazonaws.com/public/images/features/See+the+Big+Picture.png",
         alt: "Active Case Checker",
       },
       {
         title: "Claim What's Yours",
         description:
           "Don't leave settlement checks on the table. If a company cooked the books, you are entitled to a refund.",
-        image: "/images/features/Cut Down Risk.png",
+        image:
+          "https://suewallst-chrome-extension.s3.us-east-1.amazonaws.com/public/images/features/Claim+What's+Yours.png",
         alt: "Instant Notifications",
       },
       {
         title: "See the Big Picture",
         description:
           "One dashboard. Multiple holdings. Lawsuit alerts are consolidated so you know exactly where your portfolio stands.",
-        image: "/images/features/See the Big Picture.png",
+        image:
+          "https://suewallst-chrome-extension.s3.us-east-1.amazonaws.com/public/images/features/Cut+Down+Risk.png",
         alt: "Big Picture View",
       },
     ],
